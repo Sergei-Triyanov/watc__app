@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
+import { Switch, Route, NavLink } from 'react-router-dom';
 import './app.sass';
 import Home from './component/Home/Home'
 import Stopwatch from './component/stopwatch/Stopwatch';
@@ -11,10 +11,10 @@ const App:React.FC = () => {
         <h1>Watch App</h1>
         <nav>
           <ul>
-            <li><Link to={'/'}>Home</Link></li>
-            <li><Link to={'/stopwatch'}>Stopwatch</Link></li>
-            <li>clock</li>
-            <li>timer</li>
+            <li><NavLink exact={true} to={'/'} activeClassName="active__link">Home</NavLink></li>
+            <li><NavLink exact={true} to={'/stopwatch'} activeClassName="active__link">Stopwatch</NavLink></li>
+            <li><NavLink exact={true} to={'/clock'}>Clock</NavLink></li>  
+            <li><NavLink exact={true} to={'/timer'}>Timer</NavLink></li>  
           </ul>
         </nav>
       </header>

@@ -1,4 +1,4 @@
-import { Istate, StopwatchType, ActionType } from './reducer-types/stopwatch'
+import { Istate, StopwatchType, ActionType } from '../type/stopwatch'
 
 const stateDefault:Istate = {
     start: false,

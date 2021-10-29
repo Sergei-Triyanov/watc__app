@@ -33,7 +33,7 @@ $font-main: 'Ubuntu', sans-serif;
         
         nav
             background-color: $color__bg__nav
-            color: $color__font__main !important
+            color: $color__font__main
             position: absolute
             top: 0
             left: 0
@@ -41,6 +41,7 @@ $font-main: 'Ubuntu', sans-serif;
             height: 100vh
             padding: 10px 0 0 20px
             ul
+                padding: 20px 0 0  
                 list-style: none
                 li
                     cursor: pointer
@@ -50,7 +51,16 @@ $font-main: 'Ubuntu', sans-serif;
                     a
                         text-decoration: none
                         color: inherit
+                        letter-spacing: 2px
                 li + li
                     margin-top: 20px
+
+// Active Link
+
+.active__link
+    color: $color__clock !important
+    transition: opacity 0.2 esea
+    &:hover
+        opacity: 0.6
                 
                         
