@@ -3,6 +3,7 @@ import { Switch, Route, NavLink } from 'react-router-dom';
 import './app.sass';
 import Home from './component/Home/Home'
 import Stopwatch from './component/stopwatch/Stopwatch';
+import { useTypedSelector } from './hook/useTypedSelector';
 
 const App:React.FC = () => {
   return (

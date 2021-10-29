@@ -1,6 +1,6 @@
-import { Istate, StopwatchType, ActionType } from '../type/stopwatch'
+import { IStateDefaultStopwatch, StopwatchType, ActionTypeStopwatch } from '../type/stopwatch'
 
-const stateDefault:Istate = {
+const stateDefaulStopwatch:IStateDefaultStopwatch = {
     start: false,
     pause: false,
     startTime: 0,
@@ -8,7 +8,7 @@ const stateDefault:Istate = {
     interval: [],
 }
 
-export const stopwatch = (state:Istate = stateDefault, action:ActionType) => {
+export const stopwatch = (state:IStateDefaultStopwatch = stateDefaulStopwatch, action:ActionTypeStopwatch) => {
     switch (action.type) {
         case StopwatchType.START:
             return { state: state, start: action.payload }

@@ -1,4 +1,4 @@
-export interface Istate {
+export interface IStateDefaultStopwatch {
     start: boolean,
     pause: boolean,
     startTime: number,
@@ -39,4 +39,4 @@ interface IIntervalStopwatch {
     payload: number
 }
 
-export type ActionType = ISatrtStopwatch | IPauseStopwatch | IStartTime | INowTime | IIntervalStopwatch
+export type ActionTypeStopwatch = ISatrtStopwatch | IPauseStopwatch | IStartTime | INowTime | IIntervalStopwatch
